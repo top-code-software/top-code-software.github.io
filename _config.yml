@@ -13,10 +13,10 @@ people:
   pic: blazej
   position: Software Engineer
   social:
-    - title: linkedin
-      url: https://www.linkedin.com/in/b%C5%82a%C5%BCej-gali%C5%84ski-9a0ab3a7/
     - title: github
       url: https://github.com/blasius93
+    - title: linkedin
+      url: https://www.linkedin.com/in/b%C5%82a%C5%BCej-gali%C5%84ski-9a0ab3a7/
 
 - name: Michał Niegrzybowski
   pic: michal
@@ -35,10 +35,6 @@ people:
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/pawe%C5%82-kurpierz-391432142/
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
 
 - name: Krzysztof Stelmach
   pic: krzysiek
