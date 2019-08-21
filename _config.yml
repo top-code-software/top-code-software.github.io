@@ -2,45 +2,57 @@ url: https://y7kim.github.io
 baseurl: /
 
 # Site settings
-title: Awesome Title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: TCSoft
+email: michal@tcsoft.it
+description: "Perfect solutions for your business."
 
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Błażej Galiński
   pic: 1
-  position: Lead Designer
+  position: Software Engineer
   social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
-
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
     - title: linkedin
-      url: #
+      url: https://www.linkedin.com/in/b%C5%82a%C5%BCej-gali%C5%84ski-9a0ab3a7/
+    - title: github
+      url: https://github.com/blasius93
 
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
+- name: Michał Niegrzybowski
+  pic: 2
+  position: Senior Software Engineer
   social:
     - title: twitter
-      url: #
+      url: https://twitter.com/mnie8
+    - title: github
+      url: https://github.com/mnie
+    - title: linkedin
+      url: https://www.linkedin.com/in/micha%C5%82-niegrzybowski/
+
+- name: Paweł Kurpierz
+  pic: 3
+  position: Business Analyst
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/pawe%C5%82-kurpierz-391432142/
     - title: facebook
       url: #
     - title: google-plus
       url: #
+
+- name: Krzysztof Stelmach
+  pic: 4
+  position: Front-end Developer
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/krzysztof-stelmach-463803127/
+
+- name: Łukasz Romanowski
+  pic: 5
+  position: Senior Software Engineer
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/%C5%82ukasz-romanowski-1a36a4190/
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
