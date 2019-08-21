@@ -1,4 +1,4 @@
-url: https://y7kim.github.io
+url: https://tcsoft.it
 baseurl: /
 
 # Site settings
@@ -10,7 +10,7 @@ description: "Perfect solutions for your business."
 # Team names, titles and social links
 people:
 - name: Błażej Galiński
-  pic: 1
+  pic: blazej
   position: Software Engineer
   social:
     - title: linkedin
@@ -19,7 +19,7 @@ people:
       url: https://github.com/blasius93
 
 - name: Michał Niegrzybowski
-  pic: 2
+  pic: michal
   position: Senior Software Engineer
   social:
     - title: twitter
@@ -30,7 +30,7 @@ people:
       url: https://www.linkedin.com/in/micha%C5%82-niegrzybowski/
 
 - name: Paweł Kurpierz
-  pic: 3
+  pic: pawel
   position: Business Analyst
   social:
     - title: linkedin
@@ -41,14 +41,14 @@ people:
       url: #
 
 - name: Krzysztof Stelmach
-  pic: 4
+  pic: krzysiek
   position: Front-end Developer
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/krzysztof-stelmach-463803127/
 
 - name: Łukasz Romanowski
-  pic: 5
+  pic: lukasz
   position: Senior Software Engineer
   social:
     - title: linkedin
