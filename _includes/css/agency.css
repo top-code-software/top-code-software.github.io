@@ -34,7 +34,6 @@ body * {
   #header .top {
     margin-top: 150px;
     padding: 40px;
-    background: rgba(0, 0, 0, 0.8);
     position: relative;
     display: flex;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
@@ -55,11 +54,43 @@ body * {
         font-size: 50px;
         display: block;
         font-weight: bold; }
+  #header .workflow {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 80px; }
+    #header .workflow .item {
+      width: 100%;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      color: #26262A;
+      color: rgba(255, 253, 253, 0.8);
+      position: relative; }
+      #header .workflow .item article {
+        flex-direction: column;
+        box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.9);
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        display: flex; }
 
 @media only screen and (max-width: 780px) {
   #header {
     height: auto;
     padding-bottom: 40px; }
+    #header .workflow {
+      margin-top: 20px; }
+    #header .workflow > .item {
+      font-size: 16px; }
+      #header .workflow > .item > article {
+        height: 110px;
+        width: 110px; }
     #header .video {
       left: -150px; }
     #header .top {
