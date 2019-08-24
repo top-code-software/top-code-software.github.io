@@ -92,7 +92,9 @@ body * {
         height: 110px;
         width: 110px; }
     #header .video {
-      left: -150px; }
+      left: -150px;
+      widows: 100%;
+    }
     #header .top {
       margin-top: 60px; }
       #header .top .blue-block {
@@ -337,4 +339,8 @@ footer {
 .dev-icon {
   max-height: 50px;
   max-width: 50px;
+}
+
+.fullscreen-bg__video {
+  width: 100%;
 }
