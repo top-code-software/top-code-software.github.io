@@ -1,6 +1,6 @@
 ---
-title: Backoffice (OTP)
-subtitle: Frontend & Backend
+title: Facebook embedded game
+subtitle: Facebook & backend
 layout: default
 modal-id: 2
 date: 2018-12-01
