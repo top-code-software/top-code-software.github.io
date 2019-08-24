@@ -29,8 +29,9 @@
                                     </strong>
                                 </li>
                                 <li>Mainly used technologies:
-                                    <strong><a href="#">{{ post.technologies }}</a>
-                                    </strong>
+                                    {% for tech in post.technologies %}
+                                        <img src="img/icons/{{tech.file}}" title="{{tech.name}}"/>
+                                    {% endfor %}
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
