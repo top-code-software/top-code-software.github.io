@@ -34,7 +34,7 @@ technologies:
     name: nginx
   - file: redis.png
     name: redis 
-  - file: k8s.png
+  - file: k8s.svg
     name: kubernetes
 
 ---
