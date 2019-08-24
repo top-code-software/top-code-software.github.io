@@ -122,10 +122,25 @@ body * {
     padding-bottom: 80px;
     justify-content: center; }
     #team .members .team-member {
-      margin: 15px;
-      max-width: 200px; }
+      padding: 15px;
+      max-width: 200px;
+      transition: all .5s ease-in-out; }
+      #team .members .team-member:hover {
+        transition: all .5s ease-in-out;
+        background: #4991E5;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        border-radius: 20px; }
+        #team .members .team-member:hover .description .name {
+          transition: all .5s ease-in-out;
+          color: #FFFDFD; }
+        #team .members .team-member:hover .description .text-muted {
+          color: #26262A; }
+        #team .members .team-member:hover img {
+          transition: all .5s ease-in-out;
+          border-radius: 20px; }
       #team .members .team-member img {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+        transition: all .5s ease-in-out; }
       #team .members .team-member .description {
         margin-top: 8px; }
         #team .members .team-member .description p {
@@ -143,7 +158,11 @@ body * {
     #team .members {
       flex-wrap: wrap; }
       #team .members .team-member {
-        max-width: 150px; } }
+        max-width: 120px; }
+        #team .members .team-member .description .text-muted {
+          font-size: 12px; }
+        #team .members .team-member .description > .name {
+          font-size: 14px; } }
 #portfolio {
   height: 100vh;
   position: relative;

@@ -177,16 +177,32 @@ body * {
         padding-bottom: 80px;
         justify-content: center;
         .team-member {
-            margin: 15px;
+            padding: 15px;
             max-width: 200px;
-
+            transition: all .5s ease-in-out;
+            &:hover {
+                transition: all .5s ease-in-out;
+                background: $cr-secondary;
+                box-shadow: 0 0 20px $cr-dark-transparent-light;
+                border-radius: 20px;
+                .description {
+                    .name {
+                        transition: all .5s ease-in-out;
+                        color: $cr-primary;
+                    }
+                    .text-muted {
+                        color: $cr-secondary-dark;
+                    }
+                }
+                 img {
+                    transition: all .5s ease-in-out;
+                    border-radius: 20px;
+                }
+            }
             img {
                 box-shadow: 0 0 20px rgba(0,0,0,.8);
+                transition: all .5s ease-in-out;
             }
-            
-            // &:last-of-type {
-            //     margin-right: 0;
-            // }
 
             .description {
                 margin-top: 8px;
@@ -214,7 +230,15 @@ body * {
         .members {
             flex-wrap: wrap;
             .team-member {
-                 max-width: 150px;
+                 max-width: 120px;
+                 .description  {
+                    .text-muted {
+                        font-size: 12px;
+                    }
+                 > .name {
+                     font-size: 14px;
+                 }
+                }
             }
         }
     }
