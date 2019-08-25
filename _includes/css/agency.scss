@@ -44,6 +44,7 @@ body * {
         position: absolute;
         z-index: -1;
         background: $cr-dark-transparent-light;
+        width: 100%;
     } 
     &:before {
         content: '';
@@ -137,6 +138,7 @@ body * {
         }
         .video {
             left: -150px;
+            width: 100%;
         }
         .top {
             margin-top: 60px;

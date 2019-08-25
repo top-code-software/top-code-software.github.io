@@ -3,7 +3,7 @@ baseurl: /
 
 # Site settings
 title: TCSoft
-subtitle: Tailor Crafted Software
+subtitle: Top Code Software
 email: michal@tcsoft.it
 description: "Perfect solutions for your business."
 
@@ -54,7 +54,7 @@ people:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
-    url: https://github.com/tailored-crafted-software
+    url: https://github.com/top-code-software
 
 # Postal address (add as many lines as necessary)
 address:

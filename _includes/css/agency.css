@@ -22,7 +22,8 @@ body * {
   #header .video {
     position: absolute;
     z-index: -1;
-    background: rgba(0, 0, 0, 0.8); }
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%; }
   #header:before {
     content: '';
     position: absolute;
