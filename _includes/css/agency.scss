@@ -234,6 +234,7 @@ body * {
                     .name {
                         transition: all .5s ease-in-out;
                         color: $cr-primary;
+                        word-spacing: 100vw;
                     }
                     .text-muted {
                         color: $cr-secondary-dark;
