@@ -94,8 +94,7 @@ body * {
         width: 110px; }
     #header .video {
       left: -150px;
-      widows: 100%;
-    }
+      width: 100%; }
     #header .top {
       margin-top: 60px; }
       #header .top .blue-block {
@@ -166,7 +165,8 @@ body * {
         border-radius: 20px; }
         #team .members .team-member:hover .description .name {
           transition: all .5s ease-in-out;
-          color: #FFFDFD; }
+          color: #FFFDFD;
+          word-spacing: 100vw; }
         #team .members .team-member:hover .description .text-muted {
           color: #26262A; }
         #team .members .team-member:hover img {
@@ -335,13 +335,11 @@ footer {
       color: #26262A;
       font-size: 72px; }
 
-/*# sourceMappingURL=agency.css.map */
-
 .dev-icon {
   max-height: 50px;
-  max-width: 50px;
-}
+  max-width: 50px; }
 
 .fullscreen-bg__video {
-  width: 100%;
-}
+  width: 100%; }
+
+/*# sourceMappingURL=agency.css.map */
