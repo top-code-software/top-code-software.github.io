@@ -13,6 +13,7 @@ people:
 - name: Błażej Galiński
   pic: blazej
   position: Software Engineer
+  about: I am Software Engineer
   social:
     - title: github
       url: https://github.com/blasius93
@@ -22,6 +23,7 @@ people:
 - name: Michał Niegrzybowski
   pic: michal
   position: Software Engineer
+  about: I am Software Engineer
   social:
     - title: twitter
       url: https://twitter.com/mnie8
@@ -33,6 +35,7 @@ people:
 - name: Paweł Kurpierz
   pic: pawel
   position: Business Analyst
+  about: I am Business Analyst
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/pawe%C5%82-kurpierz-391432142/
@@ -40,6 +43,7 @@ people:
 - name: Krzysztof Stelmach
   pic: krzysiek
   position: Front-end Developer
+  about: I am Front-end Developer
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/krzysztof-stelmach-463803127/
@@ -47,6 +51,7 @@ people:
 - name: Łukasz Romanowski
   pic: lukasz
   position: Software Engineer
+  about: I am Facebook master
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/%C5%82ukasz-romanowski-1a36a4190/

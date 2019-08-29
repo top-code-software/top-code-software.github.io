@@ -13,8 +13,34 @@ body * {
  box-sizing: border-box;
 }
 
+.navbar {
+    padding-top: 20px;
+    min-height: 100px;
+    transition: all .5s ease;
+    &.navbar-shrink {
+        padding-top: 0;
+        transition: all .5s ease;
+        min-height: 60px;
+        .navbar-brand {
+            span:first-of-type {
+                transition: all .5s ease;
+                font-size: 40px; 
+                margin-bottom: 0;
+            }
+            span:last-of-type {
+                transition: all .5s ease;
+                font-size: 12px; //12
+            }
+        }
+    }
+
+}
+
 .navbar-default.navbar {
     background-color: rgba(0,0,0,.4);
+}
+.navbar-nav>li>a {
+    font-size: 18px;
 }
 .navbar-brand {
     display: flex;
@@ -22,11 +48,14 @@ body * {
     padding: 14px 15px;
     color: $cr-primary;
     span:first-of-type {
+        transition: all .5s ease;
         font-family: Passion One;
-        font-size: 40px;
-    }
+        font-size: 60px; //40
+        margin-bottom: 8px;
+    } 
     span:last-of-type {
-        font-size: 12px;
+        transition: all .5s ease;
+        font-size: 17px; //12
     }
 }
 
@@ -37,7 +66,10 @@ body * {
     overflow: hidden;
     height: 100vh;
     position: relative;
-
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     // background: url('{{ site.baseurl }}/img/header-bg.jpg');
 
     .video {
@@ -57,14 +89,13 @@ body * {
     }
 
     .top {
-        margin-top: 150px;
         padding: 40px;
         // background: $cr-dark-transparent-light;
         position: relative;
         display: flex;
         box-shadow: 0 0 20px $cr-dark-transparent-light;
         .blue-block {
-            height: 100px;
+            height: 140px;
             background:   linear-gradient(45deg,  transparent 0%, transparent 57%, darken($cr-secondary,25%) 100%),
             linear-gradient(-45deg, darken($cr-secondary, 25%) 0%,  $cr-secondary 0.3%, darken($cr-secondary, 25%) 112%,  transparent 11% ),
             linear-gradient(-90deg, $cr-secondary 100%, $cr-secondary 65%, transparent 20% );
@@ -106,7 +137,7 @@ body * {
                 // border: 3px solid red;
                 box-shadow: inset 0 0 8px rgba(0,0,0,.8);
                 // background: rgba(255, 253, 253, .8);
-                background: rgba(0, 0, 0, .9);
+                // background: rgba(0, 0, 0, .9);
 
 
                 width: 180px;
@@ -204,11 +235,18 @@ body * {
         }
     }
 }
+@keyframes team-member {
+      0% {
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+      }
+
+}
 
 #team {
     // height: 100vh;
     background:  linear-gradient(to right, rgba(33,33,36,1) 0%, rgba(9,9,10,1) 58%, rgba(5,5,5,1) 100%);
-
     .section-heading {
         color: $cr-primary;
         margin-top: 80px;
@@ -221,33 +259,50 @@ body * {
         padding-top: 40px;
         padding-bottom: 80px;
         justify-content: center;
+        position: relative;
         .team-member {
             padding: 15px;
-            max-width: 200px;
+            // max-width: 200px;
             transition: all .5s ease-in-out;
+            height: 320px;
+            .about {
+                display: none;
+            }
             &:hover {
+        
+                .about {
+                    display: inline-block;
+                    color: $cr-primary;
+                    width: 100%;
+                    padding: 15px;
+                    font-size: 16px;
+                }
+                cursor: pointer;
+                animation: team-member 10000000000000s infinite;
                 transition: all .5s ease-in-out;
-                background: $cr-secondary;
+                background: rgba(38, 38, 42, .99);
                 box-shadow: 0 0 20px $cr-dark-transparent-light;
                 border-radius: 20px;
+                display: flex;
+                flex-direction: row;
+                left: 0;
+                top: 40px;
                 .description {
-                    .name {
-                        transition: all .5s ease-in-out;
+                    .name,
+                    .text-muted { 
                         color: $cr-primary;
-                        word-spacing: 100vw;
                     }
-                    .text-muted {
-                        color: $cr-secondary-dark;
-                    }
+
                 }
                  img {
-                    transition: all .5s ease-in-out;
                     border-radius: 20px;
+                    width: 200px;
                 }
             }
             img {
                 box-shadow: 0 0 20px rgba(0,0,0,.8);
                 transition: all .5s ease-in-out;
+                max-width: 200px;
             }
 
             .description {
@@ -261,9 +316,6 @@ body * {
                     text-transform: uppercase;
                     font-size: 18px;
                     font-weight: 600;
-                }
-
-                > .text-muted {
                 }
             }
         }
@@ -291,7 +343,7 @@ body * {
 }
 
 #portfolio {
-    height: 100vh;
+    // height: 100vh;
     position: relative;
     background: $cr-secondary;
     overflow: hidden;
@@ -343,30 +395,30 @@ body * {
         }
 
     }
-    &:before {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        display: inline-block;
-        top: 50%;
-        left: 0;
-        border-left: 50vw solid transparent;
-        border-right: 50vw solid transparent;
-        border-top: 50vh solid $cr-secondary;
-        z-index: 1;
-        filter: drop-shadow(0 12px 8px rgba(0,0,0,.2));
-    }
-    &:after {
-        content: '';
-        display: inline-block;
-        position: absolute; 
-        width: 100%;
-        height: 50vh;
-        bottom: 0;
-        left: 0;
-        background: $cr-primary;
-    }
+    // &:before {
+    //     content: '';
+    //     position: absolute;
+    //     width: 0;
+    //     height: 0;
+    //     display: inline-block;
+    //     top: 50%;
+    //     left: 0;
+    //     border-left: 50vw solid transparent;
+    //     border-right: 50vw solid transparent;
+    //     border-top: 50vh solid $cr-secondary;
+    //     z-index: 1;
+    //     filter: drop-shadow(0 12px 8px rgba(0,0,0,.2));
+    // }
+    // &:after {
+    //     content: '';
+    //     display: inline-block;
+    //     position: absolute; 
+    //     width: 100%;
+    //     height: 50vh;
+    //     bottom: 0;
+    //     left: 0;
+    //     background: $cr-primary;
+    // }
     .portfolio-caption {
         color: $cr-primary;
     }

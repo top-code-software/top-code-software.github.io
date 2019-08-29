@@ -9,19 +9,25 @@
             <section class="members">
                 {% for member in site.people %}
                     <div class="team-member">
-                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
-                        <section class="description">
-                            <p class="name">{{ member.name }}</p>
-                            <p class="text-muted">{{ member.position }}</p>
-                            <ul class="list-inline social-buttons">
-                                {% for network in member.social %}
-                                <li>
-                                    <a href="{{ network.url }}">
-                                        <i class="fa fa-{{ network.title }}"></i>
-                                    </a>
-                                </li>
-                                {% endfor %}
-                            </ul>
+                        <div>
+                            <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                            <section class="description">
+                                <p class="name">{{ member.name }}</p>
+                                <p class="text-muted">{{ member.position }}</p>
+                                <ul class="list-inline social-buttons">
+                                    {% for network in member.social %}
+                                    <li>
+                                        <a href="{{ network.url }}">
+                                            <i class="fa fa-{{ network.title }}"></i>
+                                        </a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </section>
+                        </div>
+
+                        <section class="about">
+                            {{member.about}}
                         </section>
                     </div>
                 {% endfor %}
