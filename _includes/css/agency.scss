@@ -58,7 +58,17 @@ body * {
         font-size: 17px; //12
     }
 }
-
+@media only screen and (max-width: $media-queries) {
+    .navbar-brand {
+        span:first-of-type {
+            font-size: 40px; //40
+            margin-bottom: 0;
+        } 
+        span:last-of-type {
+            font-size: 12px; //12
+        }
+    }
+}
 
 
 
@@ -168,8 +178,10 @@ body * {
             }
         }
         .video {
-            left: -150px;
+            // left: -150px;
             width: 100%;
+            
+            height: 100%;
         }
         .top {
             margin-top: 60px;
@@ -235,17 +247,9 @@ body * {
         }
     }
 }
-@keyframes team-member {
-      0% {
-        position: absolute;
-        width: 100%;
-        max-width: 100%;
-      }
 
-}
 
 #team {
-    // height: 100vh;
     background:  linear-gradient(to right, rgba(33,33,36,1) 0%, rgba(9,9,10,1) 58%, rgba(5,5,5,1) 100%);
     .section-heading {
         color: $cr-primary;
@@ -254,39 +258,46 @@ body * {
 
     .members {
         display: flex;
-        
         flex-direction: row;
         padding-top: 40px;
         padding-bottom: 80px;
         justify-content: center;
         position: relative;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+
         .team-member {
-            padding: 15px;
-            // max-width: 200px;
+            padding: 20px;
+            height: 370px;
             transition: all .5s ease-in-out;
-            height: 320px;
+            flex-direction: column;
+            width: 300px;
+            overflow: hidden;
+            > div {
+                text-align: center;
+                margin: 0 auto;
+            }
             .about {
-                display: none;
+                transition: all .5s ease-in-out;
+                opacity: 0;
+                display: inline-block;
+                color: $cr-primary;
+                font-size: 16px;
+                // display: none;
             }
             &:hover {
-        
-                .about {
-                    display: inline-block;
-                    color: $cr-primary;
-                    width: 100%;
-                    padding: 15px;
-                    font-size: 16px;
-                }
+               
                 cursor: pointer;
-                animation: team-member 10000000000000s infinite;
                 transition: all .5s ease-in-out;
                 background: rgba(38, 38, 42, .99);
                 box-shadow: 0 0 20px $cr-dark-transparent-light;
                 border-radius: 20px;
                 display: flex;
-                flex-direction: row;
-                left: 0;
-                top: 40px;
+                flex-direction: column;
+
+                .about {
+                    opacity: 1;
+                }
                 .description {
                     .name,
                     .text-muted { 
@@ -296,13 +307,17 @@ body * {
                 }
                  img {
                     border-radius: 20px;
-                    width: 200px;
+                    width: 140px;
+                    margin: 0 auto;
+
                 }
             }
             img {
                 box-shadow: 0 0 20px rgba(0,0,0,.8);
                 transition: all .5s ease-in-out;
-                max-width: 200px;
+                max-width: 260px;
+                margin: 0 auto;
+
             }
 
             .description {
@@ -328,7 +343,9 @@ body * {
         .members {
             flex-wrap: wrap;
             .team-member {
-                 max-width: 120px;
+                margin: 0 auto;
+                height: 300px;
+
                  .description  {
                     .text-muted {
                         font-size: 12px;
@@ -337,6 +354,19 @@ body * {
                      font-size: 14px;
                  }
                 }
+                img {
+                    width: 200px;
+                }
+                &:hover {
+                    img {
+                        width: 110px;
+                    }
+                                        
+                    .about {
+                        font-size: 12px;
+                    } 
+                }
+
             }
         }
     }

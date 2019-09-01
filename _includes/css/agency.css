@@ -37,6 +37,12 @@ body * {
     transition: all .5s ease;
     font-size: 17px; }
 
+@media only screen and (max-width: 780px) {
+  .navbar-brand span:first-of-type {
+    font-size: 40px;
+    margin-bottom: 0; }
+  .navbar-brand span:last-of-type {
+    font-size: 12px; } }
 #header {
   overflow: hidden;
   height: 100vh;
@@ -117,8 +123,8 @@ body * {
         height: 110px;
         width: 110px; }
     #header .video {
-      left: -150px;
-      width: 100%; }
+      width: 100%;
+      height: 100%; }
     #header .top {
       margin-top: 60px; }
       #header .top .blue-block {
@@ -167,11 +173,6 @@ body * {
     height: auto; }
     #services::before, #services::after {
       content: unset; } }
-@keyframes team-member {
-  0% {
-    position: absolute;
-    width: 100%;
-    max-width: 100%; } }
 #team {
   background: linear-gradient(to right, #212124 0%, #09090a 58%, #050505 100%); }
   #team .section-heading {
@@ -183,40 +184,47 @@ body * {
     padding-top: 40px;
     padding-bottom: 80px;
     justify-content: center;
-    position: relative; }
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: 40px; }
     #team .members .team-member {
-      padding: 15px;
+      padding: 20px;
+      height: 370px;
       transition: all .5s ease-in-out;
-      height: 320px; }
+      flex-direction: column;
+      width: 300px;
+      overflow: hidden; }
+      #team .members .team-member > div {
+        text-align: center;
+        margin: 0 auto; }
       #team .members .team-member .about {
-        display: none; }
+        transition: all .5s ease-in-out;
+        opacity: 0;
+        display: inline-block;
+        color: #FFFDFD;
+        font-size: 16px; }
       #team .members .team-member:hover {
         cursor: pointer;
-        animation: team-member 10000000000000s infinite;
         transition: all .5s ease-in-out;
         background: rgba(38, 38, 42, 0.99);
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
         border-radius: 20px;
         display: flex;
-        flex-direction: row;
-        left: 0;
-        top: 40px; }
+        flex-direction: column; }
         #team .members .team-member:hover .about {
-          display: inline-block;
-          color: #FFFDFD;
-          width: 100%;
-          padding: 15px;
-          font-size: 16px; }
+          opacity: 1; }
         #team .members .team-member:hover .description .name,
         #team .members .team-member:hover .description .text-muted {
           color: #FFFDFD; }
         #team .members .team-member:hover img {
           border-radius: 20px;
-          width: 200px; }
+          width: 140px;
+          margin: 0 auto; }
       #team .members .team-member img {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
         transition: all .5s ease-in-out;
-        max-width: 200px; }
+        max-width: 260px;
+        margin: 0 auto; }
       #team .members .team-member .description {
         margin-top: 8px; }
         #team .members .team-member .description p {
@@ -234,11 +242,18 @@ body * {
     #team .members {
       flex-wrap: wrap; }
       #team .members .team-member {
-        max-width: 120px; }
+        margin: 0 auto;
+        height: 300px; }
         #team .members .team-member .description .text-muted {
           font-size: 12px; }
         #team .members .team-member .description > .name {
-          font-size: 14px; } }
+          font-size: 14px; }
+        #team .members .team-member img {
+          width: 200px; }
+        #team .members .team-member:hover img {
+          width: 110px; }
+        #team .members .team-member:hover .about {
+          font-size: 12px; } }
 #portfolio {
   position: relative;
   background: #4991E5;
