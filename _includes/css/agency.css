@@ -255,7 +255,10 @@ body * {
 
 @media only screen and (max-width: 780px) {
   #team {
-    height: auto; }
+    height: auto;
+    background: linear-gradient(to right, #21222B 0%, #2c343f 58%, #2c343f 100%);
+    z-index: 1;
+    position: relative; }
     #team .members {
       flex-wrap: wrap; }
       #team .members .team-member {

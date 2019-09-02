@@ -173,6 +173,7 @@ body * {
 }
 
 @media only screen and (max-width: $media-queries) {
+
     #header {
         height: auto;
         padding-bottom: 40px;
@@ -382,6 +383,9 @@ body * {
 @media only screen and (max-width: $media-queries) {
     #team {
         height: auto;
+        background:  linear-gradient(to right, #21222B 0%, #2c343f 58%, #2c343f 100%);
+         z-index: 1;
+         position: relative;
         .members {
             flex-wrap: wrap;
             .team-member {
