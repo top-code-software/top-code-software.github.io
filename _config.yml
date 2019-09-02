@@ -13,7 +13,7 @@ people:
 - name: Błażej Galiński
   pic: blazej
   position: Software Engineer
-  about: I am Software Engineer
+  about: I am a Software Engineer who loves PHP.
   social:
     - title: github
       url: https://github.com/blasius93
@@ -23,7 +23,7 @@ people:
 - name: Michał Niegrzybowski
   pic: michal
   position: Software Engineer
-  about: I am Software Engineer
+  about: Software Craftsman, big fan of functional programming, TDD, DDD. Not afraid of any technology or language.
   social:
     - title: twitter
       url: https://twitter.com/mnie8
@@ -35,7 +35,7 @@ people:
 - name: Paweł Kurpierz
   pic: pawel
   position: Business Analyst
-  about: I am Business Analyst
+  about: I am a Business Analyst
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/pawe%C5%82-kurpierz-391432142/
@@ -51,7 +51,7 @@ people:
 - name: Łukasz Romanowski
   pic: lukasz
   position: Software Engineer
-  about: I am Facebook master
+  about: I am a Facebook master
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/%C5%82ukasz-romanowski-1a36a4190/
