@@ -59,6 +59,10 @@ body * {
     }
 }
 @media only screen and (max-width: $media-queries) {
+    .navbar {
+        min-height: 60px;
+        padding-top: 0;
+    }
     .navbar-brand {
         span:first-of-type {
             font-size: 40px; //40
@@ -70,8 +74,10 @@ body * {
     }
 }
 
+#canvas{
+    z-index: -1;
 
-
+}
 #header {
     overflow: hidden;
     height: 100vh;
@@ -80,30 +86,33 @@ body * {
     align-content: center;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 32px 12px rgba(0,0,0,.5);
     // background: url('{{ site.baseurl }}/img/header-bg.jpg');
 
-    .video {
-        position: absolute;
-        z-index: -1;
-        background: $cr-dark-transparent-light;
+    #canvas{
+        position: fixed;
+        background-color: #2c343f;
         width: 100%;
-    } 
-    &:before {
-        content: '';
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: $cr-dark-transparent-light;
+        height: 100vh;
+        z-index: 0;
     }
+
+    // &:before {
+    //     content: '';
+    //     position: absolute;
+    //     height: 100%;
+    //     width: 100%;
+    //     top: 0;
+    //     left: 0;
+    //     background: $cr-dark-transparent-light;
+    // }
 
     .top {
         padding: 40px;
         // background: $cr-dark-transparent-light;
         position: relative;
         display: flex;
-        box-shadow: 0 0 20px $cr-dark-transparent-light;
+        // box-shadow: 0 0 20px $cr-dark-transparent-light;
         .blue-block {
             height: 140px;
             background:   linear-gradient(45deg,  transparent 0%, transparent 57%, darken($cr-secondary,25%) 100%),
@@ -213,6 +222,7 @@ body * {
     font-size: 18px;
     line-height: 1.5;
     z-index: 100;
+    box-shadow: 0 12px 32px 0 rgba(0,0,0,.5);
     .intro-text {
         padding-top: 40px;
         .right-place {
@@ -280,7 +290,7 @@ body * {
 
 
 #team {
-    background:  linear-gradient(to right, rgba(33,33,36,1) 0%, rgba(9,9,10,1) 58%, rgba(5,5,5,1) 100%);
+    // background:  linear-gradient(to right, #21222B 0%, #2c343f 58%, #2c343f 100%);
     .section-heading {
         color: $cr-primary;
         margin-top: 80px;
@@ -320,7 +330,7 @@ body * {
                
                 cursor: pointer;
                 transition: all 1s ease-in-out;
-                background: rgba(38, 38, 42, .99);
+                background: rgba(44, 52, 63, .95);
                 box-shadow: 0 0 20px $cr-dark-transparent-light;
                 border-radius: 20px;
                 display: flex;
@@ -410,6 +420,7 @@ body * {
     background: $cr-secondary;
     overflow: hidden;
     padding-bottom: 80px;
+    box-shadow: 0 0 32px 12px rgba(0,0,0,.5);
     .section-heading {
         color: $cr-primary;
         margin-top: 80px;
@@ -491,6 +502,8 @@ body * {
 }
 
 #contact {
+    z-index: 1;
+    position: relative;
     background:  darken($cr-secondary-dark, 5%);
     padding-bottom: 80px;
     .section-heading {
@@ -515,6 +528,8 @@ body * {
 footer {
     background: darken($cr-secondary-dark, 9%);
     padding: 20px 0;
+    z-index: 1;
+    position: relative;
     .copyright {
         color: darken(#fff, 20%);
     }
