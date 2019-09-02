@@ -1,5 +1,5 @@
 url: https://tcsoft.it
-baseurl: /
+baseurl: /tcsoft/
 
 # Site settings
 title: TCSoft
@@ -43,7 +43,7 @@ people:
 - name: Krzysztof Stelmach
   pic: krzysiek
   position: Front-end Developer
-  about: I am Front-end Developer
+  about:  I have a lot of experience in front-end development. I'm highly skilled in writing code in Javascript, Angular framework, styling in SASS and UX/UI design.
   social:
     - title: linkedin
       url: https://www.linkedin.com/in/krzysztof-stelmach-463803127/
