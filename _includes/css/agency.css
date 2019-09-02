@@ -190,7 +190,7 @@ body * {
     #team .members .team-member {
       padding: 20px;
       height: 370px;
-      transition: all .5s ease-in-out;
+      transition: all 1s ease-in-out;
       flex-direction: column;
       width: 300px;
       overflow: hidden; }
@@ -198,14 +198,13 @@ body * {
         text-align: center;
         margin: 0 auto; }
       #team .members .team-member .about {
-        transition: all .5s ease-in-out;
         opacity: 0;
         display: inline-block;
         color: #FFFDFD;
         font-size: 16px; }
       #team .members .team-member:hover {
         cursor: pointer;
-        transition: all .5s ease-in-out;
+        transition: all 1s ease-in-out;
         background: rgba(38, 38, 42, 0.99);
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
         border-radius: 20px;
@@ -213,17 +212,15 @@ body * {
         flex-direction: column; }
         #team .members .team-member:hover .about {
           opacity: 1; }
-        #team .members .team-member:hover .description .name,
-        #team .members .team-member:hover .description .text-muted {
-          color: #FFFDFD; }
         #team .members .team-member:hover img {
+          transition: width 1.2s, height 1.2s;
           border-radius: 20px;
           width: 140px;
           margin: 0 auto; }
       #team .members .team-member img {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-        transition: all .5s ease-in-out;
-        max-width: 260px;
+        transition: all 1s ease-in-out;
+        width: 260px;
         margin: 0 auto; }
       #team .members .team-member .description {
         margin-top: 8px; }

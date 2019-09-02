@@ -269,7 +269,7 @@ body * {
         .team-member {
             padding: 20px;
             height: 370px;
-            transition: all .5s ease-in-out;
+            transition: all 1s ease-in-out;
             flex-direction: column;
             width: 300px;
             overflow: hidden;
@@ -278,7 +278,7 @@ body * {
                 margin: 0 auto;
             }
             .about {
-                transition: all .5s ease-in-out;
+                // transition: all 1s ease-in-out;
                 opacity: 0;
                 display: inline-block;
                 color: $cr-primary;
@@ -288,7 +288,7 @@ body * {
             &:hover {
                
                 cursor: pointer;
-                transition: all .5s ease-in-out;
+                transition: all 1s ease-in-out;
                 background: rgba(38, 38, 42, .99);
                 box-shadow: 0 0 20px $cr-dark-transparent-light;
                 border-radius: 20px;
@@ -298,14 +298,15 @@ body * {
                 .about {
                     opacity: 1;
                 }
-                .description {
-                    .name,
-                    .text-muted { 
-                        color: $cr-primary;
-                    }
+                // .description {
+                //     .name,
+                //     .text-muted { 
+                //         // color: $cr-primary;
+                //     }
 
-                }
+                // }
                  img {
+                    transition: width 1.2s, height 1.2s;
                     border-radius: 20px;
                     width: 140px;
                     margin: 0 auto;
@@ -314,8 +315,8 @@ body * {
             }
             img {
                 box-shadow: 0 0 20px rgba(0,0,0,.8);
-                transition: all .5s ease-in-out;
-                max-width: 260px;
+                transition: all 1s ease-in-out;
+                width: 260px;
                 margin: 0 auto;
 
             }
